@@ -5,7 +5,7 @@ object Tester extends App{
   val personOne : Person = new Person("Prakhar", 24)
   val personTwo : Person = new Person("Prakhar", 25)
 
-  println(personOne < personTwo)
+  println(personOne > personTwo)
 
   val personThree : Person = new Person("Prakhar", 23)
 
