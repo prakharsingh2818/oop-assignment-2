@@ -8,6 +8,12 @@ class PersonTest extends AnyFlatSpec {
   "A person" should "be less than other person it it is younger and has the same name" in {
     val personTwo : Person = new Person("Prakhar", age = 25)
     assert(personOne < personTwo)
+    assert(personOne.comparePerson(personTwo))
+  }
+
+  it should "be greater than other person it it is older and has the same name" in {
+    val personTwo : Person = new Person("Prakhar", age = 25)
+    assert(personTwo > personOne)
   }
 
   it should "be less than other person if it has a shorter name" in {
